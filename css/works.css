@@ -1,0 +1,98 @@
+body{
+    background:#ffffff;
+    font-family:
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    serif;
+
+    color:#555;
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.work-thumb {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+  cursor: pointer;
+}
+
+.home-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 余白の呼吸 */
+}
+
+.home-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.home-link:hover {
+  opacity: 1;
+}
+
+/* 作品集紹介セクション */
+.works-book-section {
+  margin: 80px auto;
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.works-book-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.works-book-lead {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.works-book-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.works-book-item {
+  width: 48%;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+/* 写真エリア */
+.works-book-photo {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.works-book-img {
+  max-width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}

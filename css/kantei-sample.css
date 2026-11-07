@@ -1,0 +1,100 @@
+body{
+    margin:0;
+    padding:0;
+    background:#ffffff;
+    color:#555;
+    font-family:
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    serif;
+}
+
+.home-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 余白の呼吸 */
+}
+
+.home-link{
+    text-decoration:none;
+    color:#777;
+    font-size:14px;
+}
+
+.sample-wrap{
+    max-width:900px;
+    margin:0 auto;
+    padding:60px 20px 120px;
+}
+
+.sample-title{
+    text-align:center;
+    font-size:34px;
+    font-weight:300;
+    margin-top:40px;
+    margin-bottom:30px;
+    color:#444;
+}
+
+.sample-lead{
+    text-align:center;
+    line-height:2.5;
+    color:#666;
+}
+
+.sample-divider{
+    width:40px;
+    height:1px;
+    background:#d8d8d8;
+    margin:60px auto;
+}
+
+.sample-gallery{
+    display:flex;
+    flex-direction:column;
+    gap:80px;
+}
+
+.sample-item{
+    text-align:center;
+}
+
+.sample-item img{
+    width:100%;
+    max-width:700px;
+    height:auto;
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.05);
+}
+
+.sample-message{
+    text-align:center;
+    margin-top:100px;
+}
+
+.sample-message p{
+    line-height:2.8;
+    color:#666;
+}
+
+footer{
+    text-align:center;
+    margin-top:120px;
+    font-size:12px;
+    color:#999;
+}
+
+@media screen and (max-width:768px){
+
+    .sample-title{
+        font-size:28px;
+    }
+
+    .sample-gallery{
+        gap:50px;
+    }
+
+}

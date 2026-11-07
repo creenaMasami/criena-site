@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  background: #f7f5f2;
+  color: #444;
+}
+
+.page-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 120px;   /* ← 少し詰めた */
+  padding-bottom: 200px;
+}
+
+.labo-box {
+  width: 720px;
+  background: #fbfaf7;
+  border-radius: 12px;
+  padding: 32px 30px;   /* ← 少し詰めた */
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+}
+
+/* 見出しの呼吸 */
+.labo-title {
+  margin: 0 0 14px;     /* ← 24px → 14px に詰めた */
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+}
+
+/* セクションの枠（余白を最適化） */
+.labo-section {
+  margin: 24px 0;       
+  padding: 12px 0;      
+  border-top: none;
+}
+
+/* 最後のセクションだけ線を消す */
+.labo-section.last {
+  border-top: none;
+}
+
+.labo-divider-line {
+  border-top: 1px solid #e8e8e8;
+  margin: 28px 0;
+  position: relative;
+}
+
+.labo-divider-line .dot {
+  width: 10px;
+  height: 10px;
+  background: #e8e8e8;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: -5px;
+  transform: translateX(-50%);
+}
+
+.labo-text.center {
+  text-align: center;
+}
+
+.home-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 余白の呼吸 */
+}
+
+.home-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.home-link:hover {
+  opacity: 1;
+}
+

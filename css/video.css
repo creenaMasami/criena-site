@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
+.video-title-list {
+  text-align: center;
+  margin: 120px 0;
+}
+
+.video-title-list p {
+  margin: 100px 0;
+  font-size: 18px;
+}
+
+.video-title-list a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.85;
+}
+
+.video-title-list a:hover {
+  opacity: 0.6;
+}
+
+.video-page {
+  text-align: center;
+  margin: 30px 0;
+}
+
+video {
+  width: 70%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.video-caption {
+  margin-top: 40px;
+  font-size: 16px;
+  color: #444;
+  opacity: 0.85;
+  letter-spacing: 0.05em;
+}
+
+.back-link {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.back-link a:hover {
+  opacity: 1;
+}
+
+.home-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 余白の呼吸 */
+}
+
+.home-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.home-link:hover {
+  opacity: 1;
+}
+
+.video-title-list p.note {
+  font-size: 12px;
+  color: #666;
+  opacity: 0.7;
+  margin-top: 0px;
+  text-align: center;
+}

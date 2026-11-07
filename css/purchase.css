@@ -1,0 +1,143 @@
+body{
+    margin:0;
+    padding:40px 20px;
+    background:#ffffff;
+    color:#555;
+    font-family:
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    serif;
+    line-height:1.8;
+}
+
+.home-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 余白の呼吸 */
+}
+
+.home-link{
+    text-decoration:none;
+    color:#777;
+    font-size:14px;
+}
+
+.home-link:hover{
+    opacity:0.7;
+}
+
+.page-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.page-title h1{
+    font-size:32px;
+    font-weight:300;
+    color:#444;
+    margin-bottom:25px;
+}
+
+.page-sub{
+    color:#666;
+    line-height:2.4;
+}
+
+.purchase-form-wrapper{
+    max-width:620px;
+    margin:0 auto;
+}
+
+.purchase-form label{
+    display:block;
+    margin-top:28px;
+    margin-bottom:8px;
+    color:#555;
+}
+
+.purchase-form input,
+.purchase-form select,
+.purchase-form textarea{
+
+    width:100%;
+    padding:14px;
+
+    border:1px solid #dddddd;
+    background:#ffffff;
+
+    box-sizing:border-box;
+
+    font-size:15px;
+
+    font-family:
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    serif;
+}
+
+.purchase-form textarea{
+    resize:vertical;
+}
+
+.purchase-form input:focus,
+.purchase-form select:focus,
+.purchase-form textarea:focus{
+
+    outline:none;
+    border-color:#bbbbbb;
+}
+
+.submit-btn{
+
+    width:100%;
+    margin-top:40px;
+    padding:14px;
+
+    border:none;
+
+    background:#f4f4f4;
+
+    color:#555;
+
+    font-family:
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    serif;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.submit-btn:hover{
+    background:#ececec;
+}
+
+footer{
+    text-align:center;
+    margin-top:100px;
+}
+
+.footer-copy{
+    font-size:12px;
+    color:#999;
+}
+
+@media screen and (max-width:768px){
+
+.page-title h1{
+    font-size:26px;
+}
+
+.page-sub{
+    font-size:14px;
+}
+
+body{
+    padding:30px 16px;
+}
+
+}

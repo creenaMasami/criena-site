@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>創造 | Masami</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ffffff;
+    font-family:
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    serif;
+    color:#444;
+    overflow-x:hidden;
+}
+
+/* 背景光 */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background:
+    radial-gradient(
+        circle at 50% 20%,
+        rgba(240,245,255,0.45),
+        transparent 45%
+    ),
+
+    radial-gradient(
+        circle at 80% 30%,
+        rgba(255,255,255,0.9),
+        transparent 35%
+    );
+
+    z-index:-1;
+}
+
+/* ヒーロー */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero-inner{
+    max-width:900px;
+}
+
+.hero h1{
+
+    font-size:clamp(48px,8vw,90px);
+    font-weight:300;
+    letter-spacing:0.25em;
+    margin-bottom:40px;
+    color:#555;
+}
+
+.hero p{
+
+    font-size:1.1rem;
+    line-height:2.2;
+    color:#777;
+    max-width:700px;
+    margin:auto;
+}
+
+.scroll{
+
+    margin-top:70px;
+    color:#aaa;
+    letter-spacing:0.2em;
+    font-size:0.8rem;
+}
+
+/* カード */
+
+.section{
+
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:120px 0;
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:40px;
+}
+
+.card{
+
+    text-decoration:none;
+    color:#444;
+
+    background:white;
+
+    padding:60px 40px;
+
+    border-radius:24px;
+
+    border:1px solid #eee;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.05);
+
+    transition:all .4s ease;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,0.08);
+}
+
+.card-title{
+
+    font-size:2rem;
+    margin-bottom:20px;
+    font-weight:normal;
+    color:#555;
+}
+
+.card-en{
+
+    color:#c8a86d;
+    letter-spacing:0.2em;
+    margin-bottom:25px;
+}
+
+.card-text{
+
+    line-height:2;
+    color:#777;
+}
+
+footer{
+
+    text-align:center;
+    padding:80px 20px;
+    color:#aaa;
+    font-size:0.9rem;
+}
+
+.home-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 余白の呼吸 */
+}
+
+.home-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.home-link:hover {
+  opacity: 1;
+}
+
+
+@media(max-width:768px){
+
+.hero h1{
+    letter-spacing:0.15em;
+}
+
+.card{
+    padding:40px 30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+  <div class="home-wrapper">
+    <a href="index.html" class="home-link">▹ 戻る</a>
+  </div>
+
+<section class="hero">
+
+<div class="hero-inner">
+
+<h1>創造</h1>
+
+<p>
+
+創造は、まだ見ぬ可能性に静かに光をあてること。<br>
+探究し、実験し、形にしていく過程そのものが、<br>
+創造の旅です。<br>
+</p>
+
+<div class="scroll">
+SCROLL
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="cards">
+
+<a href="lab.html" class="card">
+
+<div class="card-title">
+DIVINATION LAB
+</div>
+
+<div class="card-en">
+LABORATORY
+</div>
+
+<div class="card-text">
+
+創造性を育てながら、新しい可能性を探究する研究室。<br>
+
+</div>
+
+</a>
+
+<a href="criena.html" class="card">
+
+<div class="card-title">
+クリエナ占術
+</div>
+
+<div class="card-en">
+DIVINATION
+</div>
+
+<div class="card-text">
+
+自己理解から創造へ。創造から現実化へ。</div>
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+</footer>
+
+</body>
+</html>

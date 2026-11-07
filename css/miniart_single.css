@@ -1,0 +1,58 @@
+body{
+    background:#ffffff;
+    font-family:
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    serif;
+
+    color:#555;
+}
+
+.miniart-page {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.miniart-page h1 {
+  font-size: 24px;
+  color: #666;
+  letter-spacing: 0.08em;
+  margin-bottom: 40px;
+}
+
+.miniart-image img {
+  width: 70%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.12);
+}
+
+.miniart-text {
+  margin-top: 40px;
+}
+
+.miniart-text p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.9;
+  margin: 12px 0;
+}
+.home-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 余白の呼吸 */
+}
+
+.home-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.home-link:hover {
+  opacity: 1;
+}

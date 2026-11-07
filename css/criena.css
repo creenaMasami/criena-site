@@ -1,0 +1,107 @@
+body{
+    margin:0;
+    padding:0;
+    background:#ffffff;
+    font-family:
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    serif;
+    color:#555;
+}
+
+.home-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 余白の呼吸 */
+}
+
+.home-link{
+    color:#333;
+    text-decoration:none;
+    font-size:14px;
+    opacity:0.8;
+}
+
+.home-link:hover{
+    opacity:1;
+}
+
+.criena-bg{
+    padding:60px 20px 120px;
+}
+
+.criena-box{
+    max-width:850px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.criena-title{
+    font-size:36px;
+    font-weight:normal;
+    color:#555;
+    margin-top:80px;
+}
+
+.criena-lead{
+    color:#777;
+    line-height:2;
+    margin-top:40px;
+}
+
+.criena-divider{
+    margin:60px 0;
+}
+
+.dot{
+    width:8px;
+    height:8px;
+    background:#c9b27f;
+    border-radius:50%;
+    display:inline-block;
+}
+
+.criena-heading{
+    font-size:24px;
+    font-weight:normal;
+    color:#666;
+    margin-bottom:40px;
+}
+
+.criena-section{
+    max-width:700px;
+    margin:0 auto;
+}
+
+.criena-text{
+    color:#666;
+    line-height:2.6;
+    margin-bottom:30px;
+}
+
+.criena-link a{
+    text-decoration:none;
+    color:#6a7fa8;
+}
+
+.criena-link a:hover{
+    opacity:0.7;
+}
+
+@media screen and (max-width:768px){
+
+.criena-title{
+    font-size:30px;
+}
+
+.criena-heading{
+    font-size:22px;
+}
+
+.criena-text{
+    line-height:2.3;
+}
+

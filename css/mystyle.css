@@ -1,0 +1,360 @@
+/* 背景 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+
+  background-image: url("../image/haikei.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* ページ全体 */
+.page-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* メニューエリア */
+.menu-area {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;   /* 常に真ん中に寄せる */
+  align-items: stretch;       /* 縦方向の位置を揃える */
+  gap: 30px;                 /* 項目同士の間隔 */
+  flex-wrap: wrap;           /* 幅が狭くなったら自動で折り返す */
+  max-width: 600px;          /* 全体の最大幅を決めておくことで、バラバラに散らばるのを防ぐ */
+  margin-left: auto;         /* 画面全体の中で中央に配置する */
+  margin-right: auto;        /* 画面全体の中で中央に配置する */
+}
+
+/* アイコン（通常サイズ） */
+.menu-icon {
+  width: 120px !important;
+  height: auto !important;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-link {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.menu-icon:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+}
+
+/* トップメッセージ（共通） */
+.top-message {
+  text-align: center;
+  margin: 50px 0; /* 上下の余白を同じに */
+}
+
+.top-message p {
+  margin: 30px 0; /* 行間を広めに */
+  font-size: 18px;
+  color: #555;
+  letter-spacing: 0.05em;
+}
+
+/* フッター */
+.footer {
+  margin-top: 40px;
+  padding: 20px 20px 20px;
+  text-align: center;
+  background: rgba(250, 250, 250, 0.75);
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #666;
+  letter-spacing: 0.08em;
+}
+
+.labo-short {
+  text-align: center;
+  margin: 60px 0; /* 上下の余白をゆったり */
+}
+
+.labo-short h2 {
+  font-size: 20px;
+  color: #666;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+
+.labo-short p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+/* ミニアートギャラリー全体 */
+.miniart-gallery {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.miniart-gallery h2 {
+  font-size: 24px;
+  color: #666;
+  letter-spacing: 0.08em;
+  margin-bottom: 40px;
+}
+
+/* 横並びの行 */
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* 画面が狭いときに折り返す */
+}
+
+/* 各アイテム */
+.gallery-item {
+  width: 260px;
+  text-align: center;
+}
+
+/* 画像のスタイル */
+.gallery-item img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.12);
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item img:hover {
+  opacity: 0.8;
+}
+
+.home-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 余白の呼吸 */
+}
+
+.home-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.home-link:hover {
+  opacity: 1;
+}
+
+.purchase-top-link {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.purchase-top-link a {
+  text-decoration: none;
+  color: #666;
+  background: #f5f5f5;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.purchase-top-link a:hover {
+  background: #e8e8e8;
+  color: #333;
+}
+
+.video-door {
+  text-align: center;
+  margin: 100px 0 100px;
+}
+
+.video-door a {
+  text-decoration: none;
+  color: #000;
+}
+
+.video-door a:hover {
+  opacity: 0.7;
+}
+
+.bottom-door {
+  text-align: center;
+  margin: 120px 0 80px;
+}
+
+.bottom-door a {
+  text-decoration: none;
+  color: #6a7fa8; /* 未来の青み */
+  font-size: 18px;
+  letter-spacing: 0.12em; /* 未来の余白 */
+  opacity: 0.85;
+  transition: 0.3s ease;
+}
+
+.bottom-door a:hover {
+  opacity: 1;
+}
+
+.works-link {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 16px;
+}
+
+.works-link a {
+  color: #333;
+  text-decoration: none;
+}
+
+.works-link a:hover {
+  opacity: 0.7;
+}
+
+.top-link-item {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.top-link-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.gallery-item {
+  margin-bottom: 40px; /* ← 好きな余白に調整OK（30〜50pxが美しい） */
+}
+
+.miniart-note {
+  text-align: center;
+  font-size: 14px;
+  color: #666;        /* ← 主張しすぎない柔らかい色 */
+  margin: 12px 0 24px; /* ← タイトルとの距離と、作品との間を整える */
+}
+
+/* ------------------------
+   光・創造・源
+------------------------ */
+
+.menu-link {
+  text-decoration: none;
+  color: #555;
+  text-align: center;
+  vertical-align: top;
+}
+
+.menu-link h2 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: #555;
+}
+
+.menu-link p {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+
+/* ------------------------
+   ラボ紹介
+------------------------ */
+
+.labo-short {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.labo-short p {
+  font-size: 16px;
+  line-height: 2;
+  color: #555;
+  letter-spacing: 0.05em;
+}
+
+/* ------------------------
+   お問い合わせ
+------------------------ */
+
+.contact-area {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.contact-area a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  transition: opacity 0.3s ease;
+}
+
+.contact-area a:hover {
+  opacity: 0.7;
+}
+
+.menu-item {
+  text-align: center;
+  width: 140px;
+}
+
+/* スマホ向け */
+@media screen and (max-width: 768px) {
+/* メニューエリア */
+.menu-area {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;                 /* すき間を少しスリムにする */
+  flex-wrap: wrap;           /* 画面が狭くなったら自然に下に折り返すようにする */
+  padding: 0 20px;           /* 左右に少し余白を持たせて端からはみ出さないようにする */
+}
+
+  .menu-link {
+    display: block;
+    margin: 15px auto;
+  }
+
+  .footer {
+    margin-top: 30px;
+    padding: 20px 10px 15px;
+  }
+
+  .top-message {
+    margin: 40px 0;
+  }
+
+  .top-message p {
+    margin: 25px 0;
+    font-size: 17px;
+  }
+}
