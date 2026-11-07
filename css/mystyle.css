@@ -13,10 +13,8 @@ body {
 
 /* ページ全体 */
 .page-wrap {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 /* メニューエリア */
 .menu-area {
@@ -31,6 +29,23 @@ body {
   max-width: 600px;          /* 全体の最大幅を決めておくことで、バラバラに散らばるのを防ぐ */
   margin-left: auto;         /* 画面全体の中で中央に配置する */
   margin-right: auto;        /* 画面全体の中で中央に配置する */
+}
+
+/* アイコン（通常サイズ） */
+.menu-icon {
+  width: 300px !important;
+  height: auto !important;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-link {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.menu-icon:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
 }
 
 /* トップメッセージ（共通） */
@@ -84,6 +99,27 @@ body {
   color: #555;
   line-height: 1.8;
   margin: 10px 0;
+}
+
+/* ミニアートギャラリー全体 */
+.miniart-gallery {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.miniart-gallery h2 {
+  font-size: 24px;
+  color: #666;
+  letter-spacing: 0.08em;
+  margin-bottom: 40px;
+}
+
+/* 横並びの行 */
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* 画面が狭いときに折り返す */
 }
 
 /* 各アイテム */
@@ -296,16 +332,15 @@ body {
     color:#555;
 }
 
-
 /* スマホ向け */
 @media screen and (max-width: 768px) {
-/* メニューエリア */
-.menu-area {
-  text-align: center;
-  margin-top: 70px;
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: center;
+  /* メニューエリア */
+  .menu-area {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
   }
 
   .menu-link {
@@ -313,20 +348,24 @@ body {
     margin: 15px auto;
   }
 
+  /* creation.html と同じくらいの文字サイズに統一 */
+  .menu-link p {
+    font-size: 1.1rem;
+    line-height: 2.2;
+  }
+
+  /* ラボ紹介の文字サイズも同様に整える場合 */
+  .labo-short p {
+    font-size: 1.1rem;
+    line-height: 2;
+  }
+
   .footer {
-    margin-top: 30px;
-    padding: 20px 10px 15px;
+    margin-top: 40px;
+    padding: 30px 10px;
   }
 
-  .top-message {
-    margin: 40px 0;
+  .hero h1 {
+    letter-spacing: 0.15em;
   }
-
-  .top-message p {
-    margin: 25px 0;
-    font-size: 17px;
-  }
-
-  .hero h1{
-    letter-spacing:0.15em;
-  }
+}
