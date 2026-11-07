@@ -33,23 +33,6 @@ body {
   margin-right: auto;        /* 画面全体の中で中央に配置する */
 }
 
-/* アイコン（通常サイズ） */
-.menu-icon {
-  width: 300px !important;
-  height: auto !important;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.menu-link {
-  display: inline-block;
-  margin: 0 20px;
-}
-
-.menu-icon:hover {
-  opacity: 0.85;
-  transform: scale(1.03);
-}
-
 /* トップメッセージ（共通） */
 .top-message {
   text-align: center;
@@ -101,27 +84,6 @@ body {
   color: #555;
   line-height: 1.8;
   margin: 10px 0;
-}
-
-/* ミニアートギャラリー全体 */
-.miniart-gallery {
-  text-align: center;
-  margin: 80px 0;
-}
-
-.miniart-gallery h2 {
-  font-size: 24px;
-  color: #666;
-  letter-spacing: 0.08em;
-  margin-bottom: 40px;
-}
-
-/* 横並びの行 */
-.gallery-row {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap; /* 画面が狭いときに折り返す */
 }
 
 /* 各アイテム */
