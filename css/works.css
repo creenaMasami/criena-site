@@ -96,3 +96,71 @@ body{
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(0,0,0,0.08);
 }
+
+/* スマホ最適化 */
+@media screen and (max-width: 768px) {
+
+  .page-title {
+    margin-top: 80px;
+    padding: 0 20px;
+  }
+
+  .page-title h1 {
+    font-size: 38px;
+  }
+
+  .page-sub {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .gallery {
+    gap: 24px;
+    padding: 40px 20px;
+  }
+
+  .work-thumb {
+    width: 300px;
+    height: 300px;
+    max-width: 90%;
+  }
+
+  .works-book-section {
+    padding: 0 20px;
+  }
+
+  .works-book-title {
+    font-size: 32px;
+  }
+
+  .works-book-lead {
+    font-size: 18px;
+  }
+
+  .works-book-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .works-book-item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .works-book-item h3 {
+    font-size: 24px;
+  }
+
+  .works-book-item p {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .works-book-img {
+    max-width: 100%;
+  }
+
+  .home-link {
+    font-size: 18px;
+  }
+}
