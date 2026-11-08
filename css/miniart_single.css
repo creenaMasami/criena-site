@@ -56,3 +56,33 @@ body{
 .home-link:hover {
   opacity: 1;
 }
+/* スマホ最適化 */
+@media screen and (max-width: 768px) {
+
+  .miniart-page {
+    margin: 60px 20px;
+  }
+
+  .miniart-page h1 {
+    font-size: 36px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .miniart-image img {
+    width: 95%;
+    max-width: 500px;
+  }
+
+  .miniart-text {
+    margin-top: 30px;
+  }
+
+  .miniart-text p {
+    font-size: 22px;
+    line-height: 1.8;
+  }
+
+  .home-link {
+    font-size: 18px;
+  }
