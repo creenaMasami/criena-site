@@ -78,8 +78,8 @@ body{
 }
 
 .works-book-item {
-    width: 90%;
-    max-width: 420px;
+    width: 95%;
+    max-width: 460px;
     margin: 0 auto;
     background: #fafafa;
     padding: 24px;
@@ -98,6 +98,15 @@ body{
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(0,0,0,0.08);
 }
+
+.works-book-item h3 {
+    text-align: center;
+}
+
+.works-book-item p {
+    text-align: left;
+}
+
 
 /* スマホ最適化 */
 @media screen and (max-width: 768px) {
@@ -144,10 +153,15 @@ body{
     gap: 20px;
   }
 
-  .works-book-item {
-    width: 100%;
-    box-sizing: border-box;
-  }
+.works-book-item {
+    width: 95%;
+    max-width: 460px;
+    margin: 0 auto;
+    background: #fafafa;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
 
   .works-book-item h3 {
     font-size: 24px;
