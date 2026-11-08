@@ -64,7 +64,7 @@ body{
   }
 
   .miniart-page h1 {
-    font-size: 36px;
+    font-size: 22px;
     line-height: 1.5;
     margin-bottom: 30px;
   }
@@ -79,10 +79,10 @@ body{
   }
 
   .miniart-text p {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.8;
   }
 
   .home-link {
-    font-size: 18px;
+    font-size: 14px;
   }
