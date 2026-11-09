@@ -1,237 +1,225 @@
 body {
-  margin: 0;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN",serif;
-  background: #f7f5f2; /* ラボと統一した柔らかい背景 */
-  color: #444;
+    margin: 0;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    background: #ffffff;
+    color: #444;
 }
 
-/* ページ全体の余白 */
+/* 戻るリンク */
+.home-wrapper {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+.home-link {
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.home-link:hover {
+    opacity: 1;
+}
+
+/* ページ全体 */
 .page-bg {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 120px;
-  padding-bottom: 200px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 140px 30px 180px;
+    box-sizing: border-box;
 }
 
-/* ボックス（ラボと同じ構造） */
+/* メインエリア */
 .miniart-box {
-  width: 100%;
-  max-width: 720px;
-  background: #fbfaf7;
-  border-radius: 12px;
-  padding: 32px 30px;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+    width: 100%;
+    max-width: 920px;
 }
 
 /* タイトル */
 .miniart-title {
-  margin: 0 0 14px;
-  font-size: 1.4rem;
-  letter-spacing: 0.06em;
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 1.8rem;
+    font-weight: normal;
+    letter-spacing: 0.12em;
+    color: #333;
 }
 
-/* リード文（冒頭の一言） */
+/* リード文 */
 .miniart-lead {
-  margin: 0 0 24px;
-  font-size: 1rem;
-  color: #666;
-  letter-spacing: 0.05em;
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto 50px;
+    line-height: 2;
+    color: #666;
+    font-size: 1rem;
 }
 
-/* 区切り線（ラボと統一） */
+/* 区切り */
 .miniart-divider {
-  border-top: 1px solid #e8e8e8;
-  margin: 28px 0;
-  position: relative;
+    border-top: 1px solid #ececec;
+    margin: 55px 0;
+    position: relative;
 }
 
 .miniart-divider .dot {
-  width: 10px;
-  height: 10px;
-  background: #e8e8e8;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: -5px;
-  transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background: #dddddd;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -4px;
+    transform: translateX(-50%);
 }
 
-/* セクション */
+/* 見出し */
 .miniart-heading {
-  margin: 0 0 14px;
-  font-size: 1.2rem;
-  letter-spacing: 0.06em;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 1.25rem;
+    font-weight: normal;
+    letter-spacing: 0.12em;
+    color: #333;
 }
 
+/* 説明文 */
 .miniart-section {
-  margin: 24px 0;
-  padding: 12px 0;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .miniart-text {
-  font-size: 0.95rem;
-  line-height: 1.8;
-  letter-spacing: 0.03em;
+    line-height: 2;
+    color: #555;
+    font-size: 0.95rem;
 }
 
 .miniart-text.center {
-  text-align: center;
+    text-align: center;
 }
 
-/* 8つの象徴（一覧） */
+/* 作品一覧 */
 .miniart-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px 50px;
+    margin-top: 60px;
 }
 
-/* 1つのミニアート枠 */
+/* 各作品 */
 .miniart-item {
-  width: 260px;
-  background: #fff;
-  border-radius: 10px;
-  padding: 18px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  max-width:100%;
+    width: 260px;
+    text-align: center;
 }
 
-/* 画像枠（後で画像を入れる） */
+/* 画像 */
 .miniart-image {
-  width: 70%;
-  aspect-ratio: 100 / 148; /* ポストカード比率 */
-  margin: 0 auto 14px;
-  background: #f0efec;
-  border-radius: 8px;
-  margin-bottom: 14px;
+    width: 100%;
+    max-width: 220px;
+    aspect-ratio: 100 / 148;
+    margin: 0 auto 18px;
+    border-radius: 8px;
 }
 
-/* Origin Glow の画像 */
+/* タイトル */
+.miniart-item-title {
+    font-size: 1rem;
+    color: #333;
+    margin: 18px 0 10px;
+    letter-spacing: 0.08em;
+}
+
+/* 詩 */
+.miniart-item-text {
+    margin: 0;
+    line-height: 1.9;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* 画像設定 */
 .origin-glow {
-  background-image: url("../image/glow_origin.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url("../image/glow_origin.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .silent-thread {
-  background-image: url("../image/silent_thread.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url("../image/silent_thread.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .inner-flow {
-  background-image: url("../image/inner_flow.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url("../image/inner_flow.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .pearl-core {
-  background-image: url("../image/pearl_core.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url("../image/pearl_core.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .rising-veil {
-  background-image: url("../image/rising_veil.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url("../image/rising_veil.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .golden-drift {
-  background-image: url("../image/golden_drift.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url("../image/golden_drift.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .unified-quiet {
-  background-image: url("../image/unified_quiet.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url("../image/unified_quiet.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .final-echo {
-  background-image: url("../image/final_echo.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url("../image/final_echo.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-/* タイトルと説明 */
-.miniart-item-title {
-  font-size: 1rem;
-  margin: 6px 0;
-  letter-spacing: 0.05em;
-}
-
-.miniart-item-text {
-  font-size: 0.9rem;
-  color: #666;
-  line-height: 1.6;
-}
-
-/* 仕様リスト */
-.miniart-spec {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.miniart-spec li {
-  margin-bottom: 8px;
-  font-size: 0.95rem;
-  letter-spacing: 0.03em;
-}
-
-.home-wrapper {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* 余白の呼吸 */
-}
-
-.home-link {
-  color: #333;
-  text-decoration: none;
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-.home-link:hover {
-  opacity: 1;
-}
-
-/* スマホ向け */
+/* スマホ */
 @media screen and (max-width: 768px) {
-  {
-    box-sizing:border-box;
-  }
 
-  .miniart-box{
-    width:100%;
-    max-width:720px;
-  }
+    .page-bg {
+        padding: 100px 20px 120px;
+    }
 
-  .miniart-item{
-    width:260px;
-    max-width:100%;
-  }
+    .miniart-title {
+        font-size: 1.5rem;
+    }
 
-  .miniart-image{
-    width:100%;
-    max-width:220px;
-    aspect-ratio:100 / 148;
-    margin:0 auto 14px;
-  }
+    .miniart-lead {
+        font-size: 0.95rem;
+        line-height: 1.9;
+    }
+
+    .miniart-list {
+        gap: 50px;
+    }
+
+    .miniart-item {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .miniart-image {
+        width: 100%;
+        max-width: 220px;
+    }
 }
