@@ -59,6 +59,11 @@ body{
     line-height:2.4;
     font-size:16px;
     color:#555;
+
+    text-align:left;
+    max-width:650px;
+    margin:0 auto;
+    padding:0 10px;
 }
 
 .home-wrapper{
