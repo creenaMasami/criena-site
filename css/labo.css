@@ -1,65 +1,12 @@
-body {
-  margin: 0;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  background: #f7f5f2;
-  color: #444;
-}
-
-.page-bg {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 120px;   /* ← 少し詰めた */
-  padding-bottom: 200px;
-}
-
-.labo-box {
-  width: 720px;
-  background: #fbfaf7;
-  border-radius: 12px;
-  padding: 32px 30px;   /* ← 少し詰めた */
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
-}
-
-/* 見出しの呼吸 */
-.labo-title {
-  margin: 0 0 14px;     /* ← 24px → 14px に詰めた */
-  font-size: 1.3rem;
-  letter-spacing: 0.06em;
-}
-
-/* セクションの枠（余白を最適化） */
-.labo-section {
-  margin: 24px 0;       
-  padding: 12px 0;      
-  border-top: none;
-}
-
-/* 最後のセクションだけ線を消す */
-.labo-section.last {
-  border-top: none;
-}
-
-.labo-divider-line {
-  border-top: 1px solid #e8e8e8;
-  margin: 28px 0;
-  position: relative;
-}
-
-.labo-divider-line .dot {
-  width: 10px;
-  height: 10px;
-  background: #e8e8e8;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: -5px;
-  transform: translateX(-50%);
-}
-
-.labo-text.center {
-  text-align: center;
+body{
+    margin:0;
+    padding:0;
+    background:#ffffff;
+    font-family:
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    serif;
+    color:#555;
 }
 
 .home-wrapper {
@@ -71,14 +18,95 @@ body {
   gap: 20px; /* 余白の呼吸 */
 }
 
-.home-link {
-  color: #333;
-  text-decoration: none;
-  font-size: 14px;
-  opacity: 0.8;
+.home-link{
+    color:#333;
+    text-decoration:none;
+    font-size:14px;
+    opacity:0.8;
 }
 
-.home-link:hover {
-  opacity: 1;
+.home-link:hover{
+    opacity:1;
 }
 
+.page-bg{
+    max-width:850px;
+    margin:0 auto;
+    padding:60px 20px 140px;
+    text-align:center;
+}
+
+.labo-title{
+    font-size:32px;
+    font-weight:normal;
+    color:#555;
+    margin:80px 0 40px;
+    letter-spacing:0.08em;
+}
+
+.labo-text{
+    max-width:700px;
+    margin:0 auto;
+    color:#666;
+    line-height:2.6;
+}
+
+.labo-divider{
+    margin:60px 0;
+    text-align:center;
+}
+
+.dot{
+    width:8px;
+    height:8px;
+    background:#c9b27f;
+    border-radius:50%;
+    display:inline-block;
+}
+
+.labo-main{
+    max-width:700px;
+    margin:80px auto;
+    text-align:center;
+    color:#666;
+    line-height:2.8;
+    font-size:1.15rem;
+    letter-spacing:0.05em;
+}
+
+.labo-light{
+    text-align:center;
+    line-height:4;
+    letter-spacing:0.15em;
+    color:#666;
+}
+
+.labo-content{
+    text-align:center;
+    line-height:3;
+    color:#666;
+}
+
+@media screen and (max-width:768px){
+
+    .labo-title{
+        font-size:26px;
+    }
+
+    .labo-text{
+        line-height:2.4;
+    }
+
+    .labo-main{
+        font-size:1.05rem;
+        line-height:2.6;
+    }
+
+    .labo-light{
+        line-height:3.2;
+    }
+
+    .labo-content{
+        line-height:2.7;
+    }
+}
