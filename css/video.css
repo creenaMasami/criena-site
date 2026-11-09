@@ -24,8 +24,10 @@ body {
 }
 
 .video-page {
-  text-align: center;
-  margin: 30px 0;
+    max-width:800px;
+    margin:0 auto;
+    padding:100px 20px;
+    text-align:center;
 }
 
 video {
@@ -85,6 +87,136 @@ video {
   opacity: 0.7;
   margin-top: 0px;
   text-align: center;
+}
+
+.video-title{
+    font-size:32px;
+    font-weight:normal;
+    letter-spacing:0.25em;
+    color:#555;
+    margin-bottom:80px;
+
+    animation:breathe 7s ease-in-out infinite;
+}
+
+.video-image{
+    width:100%;
+    max-width:500px;
+
+    opacity:0;
+    animation:fadeIn 2.5s ease forwards;
+}
+
+.video-caption{
+    margin-top:40px;
+    line-height:2.2;
+    color:#666;
+}
+
+.video-button{
+    display:inline-block;
+    margin-top:60px;
+    color:#666;
+    text-decoration:none;
+    border-bottom:1px solid #ccc;
+    padding-bottom:5px;
+    transition:all 0.3s ease;
+}
+
+.video-button:hover{
+    opacity:0.6;
+}
+
+/* 空間アート */
+
+.space-wrap{
+    max-width:800px;
+    margin:0 auto;
+    padding:100px 20px 120px;
+    text-align:center;
+}
+
+.space-title{
+    font-size:32px;
+    font-weight:normal;
+    letter-spacing:0.25em;
+    color:#555;
+    margin-bottom:70px;
+
+    animation:breathe 7s ease-in-out infinite;
+}
+
+.space-intro{
+    max-width:600px;
+    margin:0 auto;
+}
+
+.space-intro p{
+    line-height:2.4;
+    color:#666;
+    margin-bottom:20px;
+}
+
+.space-divider{
+    width:40px;
+    height:1px;
+    background:#d8d8d8;
+    margin:80px auto;
+}
+
+.space-work{
+    margin:80px auto;
+}
+
+.space-link{
+    text-decoration:none;
+    display:block;
+}
+
+.space-link h2{
+    color:#555;
+    font-weight:normal;
+    letter-spacing:0.15em;
+    font-size:22px;
+    margin-bottom:15px;
+
+    transition:0.3s;
+}
+
+.space-link p{
+    color:#777;
+    line-height:2;
+    font-size:15px;
+
+    transition:0.3s;
+}
+
+.space-link:hover h2,
+.space-link:hover p{
+    opacity:0.6;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes breathe{
+    0%{
+        opacity:0.6;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0.6;
+    }
 }
 
 /* スマホ最適化 */
