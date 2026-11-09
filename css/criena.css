@@ -101,15 +101,15 @@ body{
 
 @media screen and (max-width:768px){
 
-.criena-title{
+  .criena-title{
     font-size:30px;
-}
+  }
 
-.criena-heading{
+  .criena-heading{
     font-size:22px;
-}
+  }
 
-.criena-text{
+ .criena-text{
     line-height:2.3;
+ }
 }
-

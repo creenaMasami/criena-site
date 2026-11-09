@@ -1,95 +1,114 @@
-/* 背景：未来の光 */
-body {
-  margin: 0;
-  padding: 0;
-  background: #f7f9fc; /* すこし青みの白 */
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+body{
+    margin:0;
+    padding:0;
+    background:#ffffff;
+    color:#555;
+    font-family:"Yu Mincho","Hiragino Mincho ProN",serif;
 }
 
-/* ページ全体 */
-.source-wrap {
-  text-align: center;
-  padding: 80px 20px 120px;
+.source-wrap{
+    max-width:900px;
+    margin:0 auto;
+    padding:80px 20px 120px;
+    text-align:center;
 }
 
-/* 題名：未来の静けさ */
-.source-title {
-  font-size: 28px;
-  color: #6a7fa8; /* 未来の青み */
-  letter-spacing: 0.15em;
-  margin-bottom: 60px;
-  opacity: 0.9;
+.source-title{
+    font-size:32px;
+    font-weight:normal;
+    letter-spacing:0.25em;
+    color:#666;
+    margin-bottom:80px;
 }
 
-/* 写真：未来の柔らかさ × 深度 × 気配 */
-.source-photo img {
-  width: 280px; /* 少し小さめの中サイズ */
-  border-radius: 10px; /* 角を少し丸く */
-  border: 2px solid rgba(106, 127, 168, 0.25); /* ほんのり青みの枠 */
-  box-shadow: 0 12px 28px rgba(106, 127, 168, 0.18); /* ほんのり青みの影（未来の深度） */
-  opacity: 0.95; /* すこし明るめ＋コントラスト弱めの雰囲気 */
-  margin-bottom: 80px;
+.source-photo img{
+    width:320px;
+    max-width:85%;
+    display:block;
+    margin:0 auto 50px;
 }
 
-/* 制作ツール：静かに添える */
-.source-credit {
-  font-size: 14px;
-  color: #777;
-  letter-spacing: 0.08em;
-  opacity: 0.8;
-  margin-top: 50px; /
+.source-message{
+    font-size:18px;
+    line-height:2.2;
+    color:#666;
+    margin-bottom:100px;
 }
 
-.source-author {
-  max-width: 650px;
-  margin: 0 auto;
-  margin-top: 60px; /* 写真との余白 */
-  text-align: left;
-  line-height: 2;
-  color: #555;
-  opacity: 0.9;
+.source-author{
+    max-width:650px;
+    margin:0 auto;
 }
 
-.source-author h2 {
-  text-align: center;
-  font-size: 20px;
-  color: #6a7fa8; /* 未来の青み */
-  letter-spacing: 0.12em;
-  margin-bottom: 30px;
+.source-author h2{
+    font-size:22px;
+    font-weight:normal;
+    letter-spacing:0.15em;
+    color:#666;
+    margin-bottom:35px;
 }
 
-.author-name {
-  text-align: center;
-  font-size: 16px;
-  color: #6a7fa8;
-  letter-spacing: 0.1em;
-  margin-bottom: 25px;
-  opacity: 0.9;
+.author-name{
+    font-size:16px;
+    letter-spacing:0.15em;
+    color:#777;
+    margin-bottom:50px;
 }
 
-.source-author p {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
+.source-author p{
+    line-height:2.4;
+    font-size:16px;
+    color:#555;
 }
 
-
-.home-wrapper {
-  position: fixed;
-  top: 20px;
-  left: 20px;
+.home-wrapper{
+    position:fixed;
+    top:20px;
+    left:20px;
   display: flex;
   flex-direction: column;
   gap: 20px; /* 余白の呼吸 */
 }
 
-.home-link {
-  color: #333;
-  text-decoration: none;
-  font-size: 14px;
-  opacity: 0.8;
+.home-link{
+    text-decoration:none;
+    color:#777;
+    font-size:14px;
+    transition:0.3s;
 }
 
-.home-link:hover {
-  opacity: 1;
+.home-link:hover{
+    opacity:0.6;
+}
+
+.source-credit{
+    margin-top:100px;
+    font-size:13px;
+    color:#999;
+    letter-spacing:0.08em;
+    text-align:center;
+}
+
+@media screen and (max-width:768px){
+
+    .source-title{
+        font-size:28px;
+        margin-bottom:60px;
+    }
+
+    .source-message{
+        font-size:16px;
+        line-height:2;
+        margin-bottom:70px;
+    }
+
+    .source-author p{
+        font-size:15px;
+        line-height:2.2;
+    }
+
+    .source-photo img{
+        width:280px;
+    }
+
 }

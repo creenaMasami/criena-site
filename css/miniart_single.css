@@ -56,6 +56,7 @@ body{
 .home-link:hover {
   opacity: 1;
 }
+
 /* スマホ最適化 */
 @media screen and (max-width: 768px) {
 
@@ -86,3 +87,4 @@ body{
   .home-link {
     font-size: 14px;
   }
+}

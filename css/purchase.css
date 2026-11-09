@@ -128,16 +128,16 @@ footer{
 
 @media screen and (max-width:768px){
 
-.page-title h1{
-    font-size:26px;
-}
+  .page-title h1{
+      font-size:26px;
+  }
 
-.page-sub{
-    font-size:14px;
-}
+  .page-sub{
+      font-size:14px;
+  }
 
-body{
-    padding:30px 16px;
-}
+  body{
+      padding:30px 16px;
+  }
 
 }

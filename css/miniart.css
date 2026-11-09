@@ -214,23 +214,24 @@ body {
 
 /* スマホ向け */
 @media screen and (max-width: 768px) {
-{
-  box-sizing:border-box;
-}
+  {
+    box-sizing:border-box;
+  }
 
-.miniart-box{
-  width:100%;
-  max-width:720px;
-}
+  .miniart-box{
+    width:100%;
+    max-width:720px;
+  }
 
-.miniart-item{
-  width:260px;
-  max-width:100%;
-}
+  .miniart-item{
+    width:260px;
+    max-width:100%;
+  }
 
-.miniart-image{
-  width:100%;
-  max-width:220px;
-  aspect-ratio:100 / 148;
-  margin:0 auto 14px;
+  .miniart-image{
+    width:100%;
+    max-width:220px;
+    aspect-ratio:100 / 148;
+    margin:0 auto 14px;
+  }
 }
