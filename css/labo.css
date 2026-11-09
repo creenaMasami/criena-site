@@ -1,0 +1,112 @@
+body{
+    margin:0;
+    padding:0;
+    background:#ffffff;
+    font-family:
+    "Yu Mincho",
+    "Hiragino Mincho ProN",
+    serif;
+    color:#555;
+}
+
+.home-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 余白の呼吸 */
+}
+
+.home-link{
+    color:#333;
+    text-decoration:none;
+    font-size:14px;
+    opacity:0.8;
+}
+
+.home-link:hover{
+    opacity:1;
+}
+
+.page-bg{
+    max-width:850px;
+    margin:0 auto;
+    padding:60px 20px 140px;
+    text-align:center;
+}
+
+.labo-title{
+    font-size:24px;
+    font-weight:normal;
+    color:#555;
+    margin:80px 0 40px;
+    letter-spacing:0.08em;
+}
+
+.labo-text{
+    max-width:700px;
+    margin:0 auto;
+    color:#666;
+    line-height:2.6;
+}
+
+.labo-divider{
+    margin:60px 0;
+    text-align:center;
+}
+
+.dot{
+    width:8px;
+    height:8px;
+    background:#c9b27f;
+    border-radius:50%;
+    display:inline-block;
+}
+
+.labo-main{
+    max-width:700px;
+    margin:80px auto;
+    text-align:center;
+    color:#666;
+    line-height:2.8;
+    font-size:1.15rem;
+    letter-spacing:0.05em;
+}
+
+.labo-light{
+    text-align:center;
+    line-height:4;
+    letter-spacing:0.15em;
+    color:#666;
+}
+
+.labo-content{
+    text-align:center;
+    line-height:3;
+    color:#666;
+}
+
+@media screen and (max-width:768px){
+
+    .labo-title{
+        font-size:26px;
+    }
+
+    .labo-text{
+        line-height:2.4;
+    }
+
+    .labo-main{
+        font-size:1.05rem;
+        line-height:2.6;
+    }
+
+    .labo-light{
+        line-height:3.2;
+    }
+
+    .labo-content{
+        line-height:2.7;
+    }
+}
