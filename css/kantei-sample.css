@@ -55,7 +55,7 @@ body{
 .sample-gallery{
     display:flex;
     flex-direction:column;
-    gap:80px;
+    gap:60px;
 }
 
 .sample-item{
@@ -64,7 +64,7 @@ body{
 
 .sample-item img{
     width:100%;
-    max-width:700px;
+    max-width:500px;
     height:auto;
     box-shadow:
     0 5px 15px rgba(0,0,0,0.05);
@@ -86,6 +86,7 @@ footer{
     font-size:12px;
     color:#999;
 }
+
 
 @media screen and (max-width:768px){
 
