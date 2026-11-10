@@ -50,16 +50,16 @@ body{
 
 .book-message{
     text-align:center;
-    max-width:700px;
+    max-width:520px;
     margin:0 auto;
     padding:0 20px;
 }
 
 .book-message p{
-    margin:0;
+    margin-bottom:24px;
     font-size:18px;
-    line-height:2.8;
-    letter-spacing:0.06em;
+    line-height:2.4;
+    letter-spacing:0.04em;
     color:#555;
 }
 
