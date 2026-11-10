@@ -1,10 +1,11 @@
 body{
+    margin:0;
+    padding:0;
     background:#ffffff;
     font-family:
     "Yu Mincho",
     "Hiragino Mincho ProN",
     serif;
-
     color:#555;
 }
 
