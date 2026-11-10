@@ -29,7 +29,7 @@ body{
 
 .book-title{
     text-align:center;
-    font-size:34px;
+    font-size:28px;
     font-weight:300;
     color:#444;
     letter-spacing:0.08em;
@@ -39,21 +39,13 @@ body{
 
 .book-photo{
     text-align:center;
-    margin-bottom:100px;
+    margin-bottom:70px;
 }
 
 .book-img{
     width:100%;
-    max-width:520px;
+    max-width:380px;
     height:auto;
-
-    background:#fff;
-    border-radius:10px;
-
-    box-shadow:
-      0 6px 18px rgba(0,0,0,0.04);
-
-    padding:10px;
 }
 
 .book-message{
