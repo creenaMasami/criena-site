@@ -94,6 +94,24 @@ body{
     text-align:center;
 }
 
+.source-journal-link{
+    margin:120px 0 40px;
+    text-align:center;
+}
+
+.source-journal-link a{
+    text-decoration:none;
+    color:#888;
+    font-size:14px;
+    letter-spacing:0.25em;
+    border-bottom:1px solid #ddd;
+    padding-bottom:8px;
+}
+
+.source-journal-link a:hover{
+    opacity:0.6;
+}
+
 @media screen and (max-width:768px){
 
     .source-title{

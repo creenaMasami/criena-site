@@ -1,0 +1,86 @@
+body{
+    margin:0;
+    padding:0;
+    background:#ffffff;
+    color:#555;
+    font-family:"Yu Mincho","Hiragino Mincho ProN",serif;
+}
+
+.home-wrapper{
+    position:fixed;
+    top:20px;
+    left:20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 余白の呼吸 */
+}
+
+.home-link{
+    text-decoration:none;
+    color:#777;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.home-link:hover{
+    opacity:0.6;
+}
+
+.yohaku-wrap{
+    max-width:900px;
+    margin:0 auto;
+    padding:80px 20px 140px;
+}
+
+.yohaku-title{
+    text-align:center;
+    font-size:30px;
+    font-weight:normal;
+    letter-spacing:0.25em;
+    color:#666;
+    margin-bottom:60px;
+}
+
+.yohaku-lead{
+    text-align:center;
+    line-height:2.6;
+    color:#777;
+    font-size:15px;
+    margin-bottom:120px;
+}
+
+.yohaku-entry{
+    max-width:650px;
+    margin:0 auto 140px;
+}
+
+.yohaku-date{
+    text-align:center;
+    color:#999;
+    font-size:13px;
+    letter-spacing:0.1em;
+    margin-bottom:40px;
+}
+
+.yohaku-entry p{
+    line-height:2.4;
+    font-size:16px;
+    color:#555;
+}
+
+@media screen and (max-width:768px){
+
+    .yohaku-title{
+        font-size:26px;
+    }
+
+    .yohaku-lead{
+        font-size:14px;
+        line-height:2.4;
+    }
+
+    .yohaku-entry p{
+        font-size:15px;
+        line-height:2.2;
+    }
+}
