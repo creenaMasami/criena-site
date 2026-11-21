@@ -196,6 +196,25 @@ video {
     opacity:0.6;
 }
 
+.space-journal-link{
+    margin:120px 0 40px;
+    text-align:center;
+}
+
+.space-journal-link a{
+    text-decoration:none;
+    color:#888;
+    font-size:14px;
+    letter-spacing:0.25em;
+    border-bottom:1px solid #ddd;
+    padding-bottom:8px;
+}
+
+.space-journal-link a:hover{
+    opacity:0.6;
+}
+
+
 @keyframes fadeIn{
     from{
         opacity:0;
