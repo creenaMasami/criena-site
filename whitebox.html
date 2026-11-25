@@ -19,7 +19,7 @@
 
 <div class="yohaku-wrap">
 
-    <p class="yohaku-lead">
+    <p class="whitebox-lead">
         おや・・見つけてしまいましたね。
     </p>
 
@@ -44,7 +44,17 @@
 
 window.addEventListener('load', () => {
 
+    const lead = document.querySelector('.whitebox-lead');
+    const img = document.querySelector('.miniart-image img');
     const bgm = document.getElementById('bgm');
+
+    setTimeout(() => {
+        lead.classList.add('show');
+    }, 1500);
+
+    if (img) {
+        img.classList.add('loaded');
+    }
 
     document.body.addEventListener(
         'click',
@@ -55,17 +65,7 @@ window.addEventListener('load', () => {
         { once: true }
     );
 
-    setTimeout(() => {
-        document.querySelector('.yohaku-lead').classList.add('show');
-    }, 1500);
-
 });
-
-const img = document.querySelector('.miniart-image img');
-
-img.onload = () => {
-    img.classList.add('loaded');
-};
 
 </script>
 
