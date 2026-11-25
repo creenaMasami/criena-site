@@ -9,6 +9,10 @@
 
 <body>
 
+<audio id="bgm" loop>
+    <source src="music/nagi.mp3" type="audio/mpeg">
+</audio>
+
 <div class="home-wrapper">
     <a href="yohaku.html" class="home-link">▹ 戻る</a>
 </div>
@@ -16,25 +20,54 @@
 <div class="yohaku-wrap">
 
     <p class="yohaku-lead">
-
-　　おや・・見つけてしまいましたね。    
+        おや・・見つけてしまいましたね。
     </p>
 
-  <div class="miniart-page">
-    <h1>Art – 凪</h1>
+    <div class="miniart-page">
 
-    <div class="miniart-image">
-      <img src="image/nagi.jpg" alt="凪のアート">
+        <h1>Art – 凪</h1>
+
+        <div class="miniart-image">
+            <img src="image/nagi.jpg" alt="凪のアート">
+        </div>
+
+        <div class="miniart-text">
+            <p>新作</p>
+            <p>－ 静かな境界線 －</p>
+        </div>
+
     </div>
-
-    <div class="miniart-text">
-      <p>新作</p>
-      <p>－ 静かな境界線 －</p>
-    </div>
-  </div>
-
 
 </div>
+
+<script>
+
+window.addEventListener('load', () => {
+
+    const bgm = document.getElementById('bgm');
+
+    document.body.addEventListener(
+        'click',
+        () => {
+            bgm.volume = 0.15;
+            bgm.play();
+        },
+        { once: true }
+    );
+
+    setTimeout(() => {
+        document.querySelector('.yohaku-lead').classList.add('show');
+    }, 1500);
+
+});
+
+const img = document.querySelector('.miniart-image img');
+
+img.onload = () => {
+    img.classList.add('loaded');
+};
+
+</script>
 
 </body>
 </html>
