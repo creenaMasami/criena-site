@@ -103,8 +103,6 @@ video {
     width:100%;
     max-width:500px;
 
-    opacity:0;
-    animation:fadeIn 2.5s ease forwards;
 }
 
 .video-caption{
