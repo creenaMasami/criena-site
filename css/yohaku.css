@@ -154,4 +154,8 @@ body{
         font-size:15px;
         line-height:2.2;
     }
+
+    .yohaku-wrap{
+        padding:80px 38px 140px;
+    }
 }
