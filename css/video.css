@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
+.video-title-list {
+  text-align: center;
+  margin: 120px 0;
+}
+
+.video-title-list p {
+  margin: 100px 0;
+  font-size: 18px;
+}
+
+.video-title-list a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.85;
+}
+
+.video-title-list a:hover {
+  opacity: 0.6;
+}
+
+.video-page {
+    max-width:800px;
+    margin:0 auto;
+    padding:100px 20px;
+    text-align:center;
+}
+
+video {
+  width: 70%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.video-caption {
+  margin-top: 40px;
+  font-size: 16px;
+  color: #444;
+  opacity: 0.85;
+  letter-spacing: 0.05em;
+}
+
+.back-link {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.back-link a:hover {
+  opacity: 1;
+}
+
+.home-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 余白の呼吸 */
+}
+
+.home-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.home-link:hover {
+  opacity: 1;
+}
+
+.video-title-list p.note {
+  font-size: 16px;
+  color: #666;
+  opacity: 0.7;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.video-title{
+    font-size:32px;
+    font-weight:normal;
+    letter-spacing:0.25em;
+    color:#555;
+    margin-bottom:80px;
+
+    animation:breathe 7s ease-in-out infinite;
+}
+
+.video-image{
+    width:100%;
+    max-width:500px;
+
+    opacity:0;
+    animation:fadeIn 2.5s ease forwards;
+}
+
+.video-caption{
+    margin-top:40px;
+    line-height:2.2;
+    color:#666;
+}
+
+.video-button{
+    display:inline-block;
+    margin-top:60px;
+    color:#666;
+    text-decoration:none;
+    border-bottom:1px solid #ccc;
+    padding-bottom:5px;
+    transition:all 0.3s ease;
+}
+
+.video-button:hover{
+    opacity:0.6;
+}
+
+/* 空間アート */
+
+.space-wrap{
+    max-width:800px;
+    margin:0 auto;
+    padding:100px 20px 120px;
+    text-align:center;
+}
+
+.space-title{
+    font-size:32px;
+    font-weight:normal;
+    letter-spacing:0.25em;
+    color:#555;
+    margin-bottom:70px;
+
+    animation:none;
+}
+
+.space-intro{
+    max-width:600px;
+    margin:0 auto;
+}
+
+.space-intro p{
+    line-height:2.4;
+    color:#666;
+    margin-bottom:20px;
+}
+
+.space-divider{
+    width:40px;
+    height:1px;
+    background:#d8d8d8;
+    margin:80px auto;
+}
+
+.space-work{
+    margin:80px auto;
+}
+
+.space-link{
+    text-decoration:none;
+    display:block;
+}
+
+.space-link h2{
+    color:#555;
+    font-weight:normal;
+    letter-spacing:0.15em;
+    font-size:22px;
+    margin-bottom:15px;
+
+    transition:0.3s;
+}
+
+.space-link p{
+    color:#777;
+    line-height:2;
+    font-size:15px;
+
+    transition:0.3s;
+}
+
+.space-link:hover h2,
+.space-link:hover p{
+    opacity:0.6;
+}
+
+.space-journal-link{
+    margin:120px 0 40px;
+    text-align:center;
+}
+
+.space-journal-link a{
+    text-decoration:none;
+    color:#888;
+    font-size:14px;
+    letter-spacing:0.25em;
+    border-bottom:1px solid #ddd;
+    padding-bottom:8px;
+}
+
+.space-journal-link a:hover{
+    opacity:0.6;
+}
+
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes breathe{
+    0%{
+        opacity:0.6;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0.6;
+    }
+}
+
+/* スマホ最適化 */
+@media screen and (max-width: 768px) {
+
+  .video-title-list {
+    margin: 80px 20px;
+  }
+
+  .video-title-list p {
+    margin: 60px 0;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .video-title-list p.note {
+    font-size: 16px;
+    margin-top: -20px;
+  }
+
+  .home-link {
+    font-size: 14px;
+  }
+ }
