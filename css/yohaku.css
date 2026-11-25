@@ -47,6 +47,13 @@ body{
     color:#777;
     font-size:15px;
     margin-bottom:120px;
+
+    opacity:0;
+    transition:opacity 3s ease;
+}
+
+.yohaku-lead.show{
+    opacity:1;
 }
 
 .yohaku-entry{
@@ -80,11 +87,18 @@ body{
   margin-bottom: 40px;
 }
 
-.miniart-image img {
-  width: 70%;
-  max-width: 600px;
-  border-radius: 12px;
-  box-shadow: 0 0 18px rgba(0,0,0,0.12);
+.miniart-image img{
+    width:70%;
+    max-width:600px;
+    border-radius:12px;
+    box-shadow:0 0 8px rgba(0,0,0,0.06);
+
+    opacity:0;
+    transition:opacity 4s ease;
+}
+
+.miniart-image img.loaded{
+    opacity:1;
 }
 
 .miniart-text {
