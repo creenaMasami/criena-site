@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>白い箱3 – Criena</title>
+<link rel="stylesheet" href="css/yohaku.css">
+</head>
+
+<body>
+
+<audio id="bgm" loop>
+    <source src="music/white2.mp3" type="audio/mpeg">
+</audio>
+
+<div class="home-wrapper">
+    <a href="whitebox2.html" class="home-link">▹ 戻る</a>
+</div>
+
+<div class="yohaku-wrap">
+
+    <div class="miniart-page">
+
+        <h1>Art – 白</h1>
+
+        <div class="miniart-image">
+            <img src="image/white.jpg" alt="白のアート">
+        </div>
+
+        <div class="miniart-text">
+
+            <p>－ 光に運ばれて －</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+window.addEventListener('load', () => {
+
+    const lead = document.querySelector('.whitebox-lead');
+    const img = document.querySelector('.miniart-image img');
+    const bgm = document.getElementById('bgm');
+
+    setTimeout(() => {
+        lead.classList.add('show');
+    }, 1500);
+
+    if (img) {
+        img.classList.add('loaded');
+    }
+
+    document.body.addEventListener(
+        'click',
+        () => {
+            bgm.volume = 0.15;
+            bgm.play();
+        },
+        { once: true }
+    );
+
+});
+
+</script>
+
+</body>
+</html>
